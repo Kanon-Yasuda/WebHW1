@@ -177,16 +177,6 @@ main {
     flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-    .section-container {
-        flex-direction: column;
-    }
-
-    .content-section {
-        margin: 25px auto;
-    }
-}
-
 .contact-list a {
     width: 120px;
     height: 120px;
@@ -221,4 +211,14 @@ main {
     height: 55px;
     object-fit: contain;
     margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+    }
+
+    .content-section {
+        margin: 25px auto;
+    }
 }
