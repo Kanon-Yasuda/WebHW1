@@ -1,0 +1,224 @@
+/* Profile Image */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #8ecae6;
+}
+
+/* Header */
+.site-header {
+    background-color: #d9f0ff;
+    padding: 25px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-content h1 {
+    font-weight: bold;
+}
+
+.site-header > p {
+    text-align: center;
+}
+
+/* Header Dark Blue Bar */
+.site-header::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #1d3557;
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Navigation Buttons */
+.main-nav a {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #8ecae6;
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+
+    border: 3px solid #457b9d;
+
+    transition: transform 0.2s ease,
+                background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+/* Navigation Hover */
+.main-nav a:hover {
+    background-color: #ffb4a2;
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyboard Accessibility */
+.main-nav a:focus {
+    outline: 3px solid #333;
+    outline-offset: 4px;
+}
+
+/* Welcome Section */
+.hero-section {
+    background-color: #d9f0ff;
+    border: 2px solid #8ecae6;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px auto 55px;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.hero-section h2 {
+    color: #1d3557;
+    margin-top: 0;
+}
+
+.hero-section p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Welcome Dark Blue Bar */
+.hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #1d3557;
+    border-radius: 16px;
+}
+
+/* Other Section Cards */
+main {
+    padding: 20px;
+}
+
+.content-section {
+    background-color: #ededed;
+    border-left: 7px solid #1d3557;
+    border-radius: 10px;
+    padding: 22px;
+    max-width: 700px;
+    margin: 25px auto 25px 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+/* Section Hover */
+.content-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Headings */
+.content-section h2 {
+    color: #1d3557;
+    margin-top: 0;
+}
+
+.content-section p {
+    line-height: 1.6;
+}
+
+/* Images Next to Sections */
+.section-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.section-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #8ecae6;
+}
+
+/* Contact Buttons */
+.contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+    }
+
+    .content-section {
+        margin: 25px auto;
+    }
+}
+
+.contact-list a {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: #8ecae6;
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+
+    border: 3px solid #457b9d;
+
+    transition: transform 0.2s ease,
+                background-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.contact-list a:hover {
+    background-color: #ffb4a2;
+    transform: scale(1.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-list img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
